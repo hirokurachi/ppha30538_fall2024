@@ -212,17 +212,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="load-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-data">Load data</h2>
 <p>Let’s first load the dataset from the <a href="https://github.com/vega/vega-datasets">vega-datasets</a> collection into a Pandas data frame.</p>
+<<<<<<< HEAD
 <div id="0c88dca0" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> vega_datasets <span class="im">import</span> data <span class="im">as</span> vega_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="f721cd29" class="cell" data-execution_count="2">
+=======
+<div id="efc29082" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> vega_datasets <span class="im">import</span> data <span class="im">as</span> vega_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="f51f131f" class="cell" data-execution_count="2">
+>>>>>>> upstream/main
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> vega_data.gapminder()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!-- Remark: I (Peter) couldn't get the command 
 data = vega_data.gapminder()
 to work. instead, I saved the data to local and I read it in from local. The code chunk which does this is set to echo false so it won't show up in the lecture notes-->
+<<<<<<< HEAD
 <div id="ba049a36" class="cell" data-execution_count="4">
+=======
+<div id="f20ad164" class="cell" data-execution_count="4">
+>>>>>>> upstream/main
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>(682, 6)</code></pre>
@@ -231,7 +243,11 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="head-summary" class="level2">
 <h2 class="anchored" data-anchor-id="head-summary"><code>head()</code> + summary</h2>
+<<<<<<< HEAD
 <div id="ede6adf6" class="cell" data-execution_count="5">
+=======
+<div id="793866e1" class="cell" data-execution_count="5">
+>>>>>>> upstream/main
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
@@ -416,7 +432,11 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="revisit-plot-from-beginning-of-prior-lecture" class="level2">
 <h2 class="anchored" data-anchor-id="revisit-plot-from-beginning-of-prior-lecture">Revisit plot from beginning of prior lecture</h2>
+<<<<<<< HEAD
 <div id="40a9c4e3" class="cell" data-execution_count="6">
+=======
+<div id="eb0336d0" class="cell" data-execution_count="6">
+>>>>>>> upstream/main
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>seattle <span class="op">=</span> vega_data.seattle_weather()</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(seattle).mark_bar().encode(</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'month(date):O'</span>,</span>
@@ -429,23 +449,41 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 <div class="cell-output cell-output-display" data-execution_count="5">
 
 <style>
+<<<<<<< HEAD
   #altair-viz-3098ffced9ae44df984f52c30e878065.vega-embed {
+=======
+  #altair-viz-ab7f1f86531c4932ad55b0bdb982f438.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-3098ffced9ae44df984f52c30e878065.vega-embed details,
   #altair-viz-3098ffced9ae44df984f52c30e878065.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-3098ffced9ae44df984f52c30e878065"></div>
+=======
+  #altair-viz-ab7f1f86531c4932ad55b0bdb982f438.vega-embed details,
+  #altair-viz-ab7f1f86531c4932ad55b0bdb982f438.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-ab7f1f86531c4932ad55b0bdb982f438"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-3098ffced9ae44df984f52c30e878065") {
       outputDiv = document.getElementById("altair-viz-3098ffced9ae44df984f52c30e878065");
+=======
+    if (outputDiv.id !== "altair-viz-ab7f1f86531c4932ad55b0bdb982f438") {
+      outputDiv = document.getElementById("altair-viz-ab7f1f86531c4932ad55b0bdb982f438");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -649,6 +687,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="x" class="level2">
 <h2 class="anchored" data-anchor-id="x">X</h2>
+<<<<<<< HEAD
 <div id="d987f69c" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>data2000 <span class="op">=</span> data.loc[data[<span class="st">'year'</span>] <span class="op">==</span> <span class="dv">2000</span>] <span class="co">#one year is more manageable</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
@@ -662,22 +701,47 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-1fa09b2c1e1a4a02853a3102fb727ad3.vega-embed {
+=======
+<div id="f0ae87dd" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data2000 <span class="op">=</span> data.loc[data[<span class="st">'year'</span>] <span class="op">==</span> <span class="dv">2000</span>] <span class="co">#one year is more manageable</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+
+<style>
+  #altair-viz-4a80ee8ada0b47c2929ecff5fc05841b.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-1fa09b2c1e1a4a02853a3102fb727ad3.vega-embed details,
   #altair-viz-1fa09b2c1e1a4a02853a3102fb727ad3.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-1fa09b2c1e1a4a02853a3102fb727ad3"></div>
+=======
+  #altair-viz-4a80ee8ada0b47c2929ecff5fc05841b.vega-embed details,
+  #altair-viz-4a80ee8ada0b47c2929ecff5fc05841b.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-4a80ee8ada0b47c2929ecff5fc05841b"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-1fa09b2c1e1a4a02853a3102fb727ad3") {
       outputDiv = document.getElementById("altair-viz-1fa09b2c1e1a4a02853a3102fb727ad3");
+=======
+    if (outputDiv.id !== "altair-viz-4a80ee8ada0b47c2929ecff5fc05841b") {
+      outputDiv = document.getElementById("altair-viz-4a80ee8ada0b47c2929ecff5fc05841b");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -730,6 +794,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="y" class="level2">
 <h2 class="anchored" data-anchor-id="y">Y</h2>
+<<<<<<< HEAD
 <div id="1786a03e" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -743,22 +808,47 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-60d9b983d586486ba045dcb91c67e821.vega-embed {
+=======
+<div id="2bb9b086" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'cluster:O'</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+
+<style>
+  #altair-viz-c7d37ccf4efa4ee282106ae897df5ab5.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-60d9b983d586486ba045dcb91c67e821.vega-embed details,
   #altair-viz-60d9b983d586486ba045dcb91c67e821.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-60d9b983d586486ba045dcb91c67e821"></div>
+=======
+  #altair-viz-c7d37ccf4efa4ee282106ae897df5ab5.vega-embed details,
+  #altair-viz-c7d37ccf4efa4ee282106ae897df5ab5.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-c7d37ccf4efa4ee282106ae897df5ab5"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-60d9b983d586486ba045dcb91c67e821") {
       outputDiv = document.getElementById("altair-viz-60d9b983d586486ba045dcb91c67e821");
+=======
+    if (outputDiv.id !== "altair-viz-c7d37ccf4efa4ee282106ae897df5ab5") {
+      outputDiv = document.getElementById("altair-viz-c7d37ccf4efa4ee282106ae897df5ab5");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -812,6 +902,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="do-not-require-zero-on-axis-range" class="level2">
 <h2 class="anchored" data-anchor-id="do-not-require-zero-on-axis-range">Do not require zero on axis range</h2>
+<<<<<<< HEAD
 <div id="101e791a" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>zero_included <span class="op">=</span> alt.Chart(data2000).mark_point().encode(</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>)),</span>
@@ -830,22 +921,52 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-84720d543f004e7791a11c6ad5984a80.vega-embed {
+=======
+<div id="3e4961af" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>zero_included <span class="op">=</span> alt.Chart(data2000).mark_point().encode(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>)),</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>zero_excluded <span class="op">=</span> alt.Chart(data2000).mark_point().encode(</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>zero_included <span class="op">|</span> zero_excluded</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+
+<style>
+  #altair-viz-5e879415046a4d19baeae1f257f100e9.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-84720d543f004e7791a11c6ad5984a80.vega-embed details,
   #altair-viz-84720d543f004e7791a11c6ad5984a80.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-84720d543f004e7791a11c6ad5984a80"></div>
+=======
+  #altair-viz-5e879415046a4d19baeae1f257f100e9.vega-embed details,
+  #altair-viz-5e879415046a4d19baeae1f257f100e9.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-5e879415046a4d19baeae1f257f100e9"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-84720d543f004e7791a11c6ad5984a80") {
       outputDiv = document.getElementById("altair-viz-84720d543f004e7791a11c6ad5984a80");
+=======
+    if (outputDiv.id !== "altair-viz-5e879415046a4d19baeae1f257f100e9") {
+      outputDiv = document.getElementById("altair-viz-5e879415046a4d19baeae1f257f100e9");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -899,6 +1020,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="size" class="level2">
 <h2 class="anchored" data-anchor-id="size"><code>size</code></h2>
+<<<<<<< HEAD
 <div id="6e1e5baa" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -913,22 +1035,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-44bc14ca70a4410c898eb2559ad63214.vega-embed {
+=======
+<div id="5b0abcb3" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+
+<style>
+  #altair-viz-545464ab760f481abdca83814fed6020.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-44bc14ca70a4410c898eb2559ad63214.vega-embed details,
   #altair-viz-44bc14ca70a4410c898eb2559ad63214.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-44bc14ca70a4410c898eb2559ad63214"></div>
+=======
+  #altair-viz-545464ab760f481abdca83814fed6020.vega-embed details,
+  #altair-viz-545464ab760f481abdca83814fed6020.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-545464ab760f481abdca83814fed6020"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-44bc14ca70a4410c898eb2559ad63214") {
       outputDiv = document.getElementById("altair-viz-44bc14ca70a4410c898eb2559ad63214");
+=======
+    if (outputDiv.id !== "altair-viz-545464ab760f481abdca83814fed6020") {
+      outputDiv = document.getElementById("altair-viz-545464ab760f481abdca83814fed6020");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -981,6 +1129,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="size-with-1000-pixels-for-largest-dot" class="level2">
 <h2 class="anchored" data-anchor-id="size-with-1000-pixels-for-largest-dot"><code>size</code> with 1000 pixels for largest dot</h2>
+<<<<<<< HEAD
 <div id="a9968def" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -995,22 +1144,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-1b10c3678e364eb7b803f99bcbc0bf61.vega-embed {
+=======
+<div id="58c42970" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>]))</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+
+<style>
+  #altair-viz-a451b756eb904ef0a5ac794d409fe67c.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-1b10c3678e364eb7b803f99bcbc0bf61.vega-embed details,
   #altair-viz-1b10c3678e364eb7b803f99bcbc0bf61.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-1b10c3678e364eb7b803f99bcbc0bf61"></div>
+=======
+  #altair-viz-a451b756eb904ef0a5ac794d409fe67c.vega-embed details,
+  #altair-viz-a451b756eb904ef0a5ac794d409fe67c.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-a451b756eb904ef0a5ac794d409fe67c"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-1b10c3678e364eb7b803f99bcbc0bf61") {
       outputDiv = document.getElementById("altair-viz-1b10c3678e364eb7b803f99bcbc0bf61");
+=======
+    if (outputDiv.id !== "altair-viz-a451b756eb904ef0a5ac794d409fe67c") {
+      outputDiv = document.getElementById("altair-viz-a451b756eb904ef0a5ac794d409fe67c");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1063,6 +1238,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="add-color-and-size-with-filledtrue" class="level2">
 <h2 class="anchored" data-anchor-id="add-color-and-size-with-filledtrue">add <code>color</code> and <code>size</code> with <code>filled=True</code></h2>
+<<<<<<< HEAD
 <div id="69766c70" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1078,22 +1254,49 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-cf6b31ddcd46426884982f8adc366d5a.vega-embed {
+=======
+<div id="5baf0d4c" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>])),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'cluster:N'</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+
+<style>
+  #altair-viz-54a79783a69a442bbd2d21f2b869a6e2.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-cf6b31ddcd46426884982f8adc366d5a.vega-embed details,
   #altair-viz-cf6b31ddcd46426884982f8adc366d5a.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-cf6b31ddcd46426884982f8adc366d5a"></div>
+=======
+  #altair-viz-54a79783a69a442bbd2d21f2b869a6e2.vega-embed details,
+  #altair-viz-54a79783a69a442bbd2d21f2b869a6e2.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-54a79783a69a442bbd2d21f2b869a6e2"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-cf6b31ddcd46426884982f8adc366d5a") {
       outputDiv = document.getElementById("altair-viz-cf6b31ddcd46426884982f8adc366d5a");
+=======
+    if (outputDiv.id !== "altair-viz-54a79783a69a442bbd2d21f2b869a6e2") {
+      outputDiv = document.getElementById("altair-viz-54a79783a69a442bbd2d21f2b869a6e2");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1146,6 +1349,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="opacity" class="level2">
 <h2 class="anchored" data-anchor-id="opacity"><code>opacity</code></h2>
+<<<<<<< HEAD
 <div id="b5b3d8c2" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1162,22 +1366,50 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-e733d99d8d2e4bf699a2a03012637f18.vega-embed {
+=======
+<div id="5e8de837" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>])),</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'cluster:N'</span>),</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    alt.OpacityValue(<span class="fl">0.2</span>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+
+<style>
+  #altair-viz-7b092f84b02841148d6f6b03ca9e8633.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-e733d99d8d2e4bf699a2a03012637f18.vega-embed details,
   #altair-viz-e733d99d8d2e4bf699a2a03012637f18.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-e733d99d8d2e4bf699a2a03012637f18"></div>
+=======
+  #altair-viz-7b092f84b02841148d6f6b03ca9e8633.vega-embed details,
+  #altair-viz-7b092f84b02841148d6f6b03ca9e8633.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-7b092f84b02841148d6f6b03ca9e8633"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-e733d99d8d2e4bf699a2a03012637f18") {
       outputDiv = document.getElementById("altair-viz-e733d99d8d2e4bf699a2a03012637f18");
+=======
+    if (outputDiv.id !== "altair-viz-7b092f84b02841148d6f6b03ca9e8633") {
+      outputDiv = document.getElementById("altair-viz-7b092f84b02841148d6f6b03ca9e8633");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1230,6 +1462,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="column" class="level2">
 <h2 class="anchored" data-anchor-id="column"><code>column</code></h2>
+<<<<<<< HEAD
 <div id="63fbc4cd" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1248,22 +1481,52 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-255c34f895bf4666b1f11499fbbc8c38.vega-embed {
+=======
+<div id="3195b800" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>])),</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'cluster:N'</span>),</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    alt.OpacityValue(<span class="fl">0.5</span>),</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    alt.Tooltip(<span class="st">'country:N'</span>),</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    alt.Column(<span class="st">'cluster:N'</span>)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+
+<style>
+  #altair-viz-66e58139e2e1415b8e3cfe13d61dfb99.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-255c34f895bf4666b1f11499fbbc8c38.vega-embed details,
   #altair-viz-255c34f895bf4666b1f11499fbbc8c38.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-255c34f895bf4666b1f11499fbbc8c38"></div>
+=======
+  #altair-viz-66e58139e2e1415b8e3cfe13d61dfb99.vega-embed details,
+  #altair-viz-66e58139e2e1415b8e3cfe13d61dfb99.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-66e58139e2e1415b8e3cfe13d61dfb99"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-255c34f895bf4666b1f11499fbbc8c38") {
       outputDiv = document.getElementById("altair-viz-255c34f895bf4666b1f11499fbbc8c38");
+=======
+    if (outputDiv.id !== "altair-viz-66e58139e2e1415b8e3cfe13d61dfb99") {
+      outputDiv = document.getElementById("altair-viz-66e58139e2e1415b8e3cfe13d61dfb99");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1316,6 +1579,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="adjust-aspect-ratio-move-pop-legend-remove-color-legend" class="level2">
 <h2 class="anchored" data-anchor-id="adjust-aspect-ratio-move-pop-legend-remove-color-legend">adjust aspect ratio, move pop legend, remove color legend</h2>
+<<<<<<< HEAD
 <div id="ce1b884e" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1335,22 +1599,53 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-2dcdfe2ab48d4eabaf985f380ba51bc4.vega-embed {
+=======
+<div id="065218cd" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>]),</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>             legend<span class="op">=</span>alt.Legend(orient<span class="op">=</span><span class="st">'bottom'</span>, titleOrient<span class="op">=</span><span class="st">'left'</span>)),</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'cluster:N'</span>, legend<span class="op">=</span><span class="va">None</span>),</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    alt.OpacityValue(<span class="fl">0.5</span>),</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    alt.Tooltip(<span class="st">'country:N'</span>),</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    alt.Column(<span class="st">'cluster:N'</span>)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>).properties(width<span class="op">=</span><span class="dv">135</span>, height<span class="op">=</span><span class="dv">135</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+
+<style>
+  #altair-viz-d512e18a29c241bfbbdf62688d5a1746.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-2dcdfe2ab48d4eabaf985f380ba51bc4.vega-embed details,
   #altair-viz-2dcdfe2ab48d4eabaf985f380ba51bc4.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-2dcdfe2ab48d4eabaf985f380ba51bc4"></div>
+=======
+  #altair-viz-d512e18a29c241bfbbdf62688d5a1746.vega-embed details,
+  #altair-viz-d512e18a29c241bfbbdf62688d5a1746.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-d512e18a29c241bfbbdf62688d5a1746"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-2dcdfe2ab48d4eabaf985f380ba51bc4") {
       outputDiv = document.getElementById("altair-viz-2dcdfe2ab48d4eabaf985f380ba51bc4");
+=======
+    if (outputDiv.id !== "altair-viz-d512e18a29c241bfbbdf62688d5a1746") {
+      outputDiv = document.getElementById("altair-viz-d512e18a29c241bfbbdf62688d5a1746");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1446,6 +1741,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_point-add-information-using-alt.shape" class="level2">
 <h2 class="anchored" data-anchor-id="mark_point-add-information-using-alt.shape"><code>mark_point()</code>: add information using <code>alt.Shape()</code></h2>
+<<<<<<< HEAD
 <div id="46e712b8" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1460,22 +1756,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-46ae7f57b91143e48985d2bbc00c8318.vega-embed {
+=======
+<div id="4981a8d4" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point().encode(</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>)),</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    alt.Shape(<span class="st">'cluster:N'</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+
+<style>
+  #altair-viz-7fe6729bf23f45c08c5cdc4addc92494.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-46ae7f57b91143e48985d2bbc00c8318.vega-embed details,
   #altair-viz-46ae7f57b91143e48985d2bbc00c8318.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-46ae7f57b91143e48985d2bbc00c8318"></div>
+=======
+  #altair-viz-7fe6729bf23f45c08c5cdc4addc92494.vega-embed details,
+  #altair-viz-7fe6729bf23f45c08c5cdc4addc92494.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-7fe6729bf23f45c08c5cdc4addc92494"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-46ae7f57b91143e48985d2bbc00c8318") {
       outputDiv = document.getElementById("altair-viz-46ae7f57b91143e48985d2bbc00c8318");
+=======
+    if (outputDiv.id !== "altair-viz-7fe6729bf23f45c08c5cdc4addc92494") {
+      outputDiv = document.getElementById("altair-viz-7fe6729bf23f45c08c5cdc4addc92494");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1528,6 +1850,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_point-format-points-using-arguments" class="level2">
 <h2 class="anchored" data-anchor-id="mark_point-format-points-using-arguments"><code>mark_point()</code>: format points using arguments</h2>
+<<<<<<< HEAD
 <div id="e01a204a" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>, size<span class="op">=</span><span class="dv">100</span>).encode(</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1542,22 +1865,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-47789bb053b34158a54be5524b254617.vega-embed {
+=======
+<div id="dd0a196c" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>, size<span class="op">=</span><span class="dv">100</span>).encode(</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>)),</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    alt.Shape(<span class="st">'cluster:N'</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+
+<style>
+  #altair-viz-4fe27f96b10149af9c0a72121c714c4d.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-47789bb053b34158a54be5524b254617.vega-embed details,
   #altair-viz-47789bb053b34158a54be5524b254617.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-47789bb053b34158a54be5524b254617"></div>
+=======
+  #altair-viz-4fe27f96b10149af9c0a72121c714c4d.vega-embed details,
+  #altair-viz-4fe27f96b10149af9c0a72121c714c4d.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-4fe27f96b10149af9c0a72121c714c4d"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-47789bb053b34158a54be5524b254617") {
       outputDiv = document.getElementById("altair-viz-47789bb053b34158a54be5524b254617");
+=======
+    if (outputDiv.id !== "altair-viz-4fe27f96b10149af9c0a72121c714c4d") {
+      outputDiv = document.getElementById("altair-viz-4fe27f96b10149af9c0a72121c714c4d");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1610,16 +1959,26 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_circle-wrapper-for-mark_pointfilledtrue" class="level2">
 <h2 class="anchored" data-anchor-id="mark_circle-wrapper-for-mark_pointfilledtrue"><code>mark_circle()</code> wrapper for <code>mark_point(filled=True)</code></h2>
+<<<<<<< HEAD
 <div id="d4e6ada8" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_circle(size<span class="op">=</span><span class="dv">100</span>).encode(</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>)),</span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    alt.Shape(<span class="st">'cluster:N'</span>)</span>
 <span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+=======
+<div id="94eab37e" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_circle(size<span class="op">=</span><span class="dv">100</span>).encode(</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>)),</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    alt.Shape(<span class="st">'cluster:N'</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+>>>>>>> upstream/main
 </div>
 </section>
 <section id="mark_square" class="level2">
 <h2 class="anchored" data-anchor-id="mark_square"><code>mark_square()</code></h2>
+<<<<<<< HEAD
 <div id="fcb0aec1" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_square(size<span class="op">=</span><span class="dv">100</span>).encode(</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1634,22 +1993,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-61f7dbda74434c01b474b79aca2082ca.vega-embed {
+=======
+<div id="af582588" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_square(size<span class="op">=</span><span class="dv">100</span>).encode(</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>, scale<span class="op">=</span>alt.Scale(zero<span class="op">=</span><span class="va">False</span>)),</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    alt.Shape(<span class="st">'cluster:N'</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+
+<style>
+  #altair-viz-07fb8aeb8dd9433c9e2f08e9552db92e.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-61f7dbda74434c01b474b79aca2082ca.vega-embed details,
   #altair-viz-61f7dbda74434c01b474b79aca2082ca.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-61f7dbda74434c01b474b79aca2082ca"></div>
+=======
+  #altair-viz-07fb8aeb8dd9433c9e2f08e9552db92e.vega-embed details,
+  #altair-viz-07fb8aeb8dd9433c9e2f08e9552db92e.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-07fb8aeb8dd9433c9e2f08e9552db92e"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-61f7dbda74434c01b474b79aca2082ca") {
       outputDiv = document.getElementById("altair-viz-61f7dbda74434c01b474b79aca2082ca");
+=======
+    if (outputDiv.id !== "altair-viz-07fb8aeb8dd9433c9e2f08e9552db92e") {
+      outputDiv = document.getElementById("altair-viz-07fb8aeb8dd9433c9e2f08e9552db92e");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1706,6 +2091,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 <li>Useful for comparing values along a single dimension with minimal overlap.</li>
 <li>A <em>dot plot</em> drawn with tick marks is sometimes referred to as a <em>strip plot</em>.</li>
 </ul>
+<<<<<<< HEAD
 <div id="a71ba5f5" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_tick().encode(</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -1719,22 +2105,47 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-fab082546caf40d3a03c703c222b9e31.vega-embed {
+=======
+<div id="4d94ac5d" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_tick().encode(</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'cluster:N'</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+
+<style>
+  #altair-viz-ab8abda4a8f34950b0e59b469ff550cb.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-fab082546caf40d3a03c703c222b9e31.vega-embed details,
   #altair-viz-fab082546caf40d3a03c703c222b9e31.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-fab082546caf40d3a03c703c222b9e31"></div>
+=======
+  #altair-viz-ab8abda4a8f34950b0e59b469ff550cb.vega-embed details,
+  #altair-viz-ab8abda4a8f34950b0e59b469ff550cb.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-ab8abda4a8f34950b0e59b469ff550cb"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-fab082546caf40d3a03c703c222b9e31") {
       outputDiv = document.getElementById("altair-viz-fab082546caf40d3a03c703c222b9e31");
+=======
+    if (outputDiv.id !== "altair-viz-ab8abda4a8f34950b0e59b469ff550cb") {
+      outputDiv = document.getElementById("altair-viz-ab8abda4a8f34950b0e59b469ff550cb");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1787,6 +2198,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_bar" class="level2">
 <h2 class="anchored" data-anchor-id="mark_bar"><code>mark_bar()</code></h2>
+<<<<<<< HEAD
 <div id="941e3f43" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_bar().encode(</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'country:N'</span>),</span>
@@ -1800,22 +2212,47 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-3e2bea4dcb274a09888e3843a327eac9.vega-embed {
+=======
+<div id="64a0c684" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_bar().encode(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'country:N'</span>),</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'pop:Q'</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+
+<style>
+  #altair-viz-777b916ee8984eb8ba92ecebb85dadc8.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-3e2bea4dcb274a09888e3843a327eac9.vega-embed details,
   #altair-viz-3e2bea4dcb274a09888e3843a327eac9.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-3e2bea4dcb274a09888e3843a327eac9"></div>
+=======
+  #altair-viz-777b916ee8984eb8ba92ecebb85dadc8.vega-embed details,
+  #altair-viz-777b916ee8984eb8ba92ecebb85dadc8.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-777b916ee8984eb8ba92ecebb85dadc8"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-3e2bea4dcb274a09888e3843a327eac9") {
       outputDiv = document.getElementById("altair-viz-3e2bea4dcb274a09888e3843a327eac9");
+=======
+    if (outputDiv.id !== "altair-viz-777b916ee8984eb8ba92ecebb85dadc8") {
+      outputDiv = document.getElementById("altair-viz-777b916ee8984eb8ba92ecebb85dadc8");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1868,6 +2305,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="use-alt.color-for-a-stacked-bar-plot" class="level2">
 <h2 class="anchored" data-anchor-id="use-alt.color-for-a-stacked-bar-plot">use <code>alt.Color()</code> for a stacked bar plot</h2>
+<<<<<<< HEAD
 <div id="7993c574" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_bar().encode(</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'cluster:N'</span>),</span>
@@ -1882,22 +2320,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-b5c2c58ce0b1408eb84c84c9b79cdf52.vega-embed {
+=======
+<div id="8613c012" class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_bar().encode(</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'cluster:N'</span>),</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'pop:Q'</span>),</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'country:N'</span>, legend<span class="op">=</span><span class="va">None</span>) </span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+
+<style>
+  #altair-viz-bfb8cbd73e6449bdaccbe2bd01cdb622.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-b5c2c58ce0b1408eb84c84c9b79cdf52.vega-embed details,
   #altair-viz-b5c2c58ce0b1408eb84c84c9b79cdf52.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-b5c2c58ce0b1408eb84c84c9b79cdf52"></div>
+=======
+  #altair-viz-bfb8cbd73e6449bdaccbe2bd01cdb622.vega-embed details,
+  #altair-viz-bfb8cbd73e6449bdaccbe2bd01cdb622.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-bfb8cbd73e6449bdaccbe2bd01cdb622"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-b5c2c58ce0b1408eb84c84c9b79cdf52") {
       outputDiv = document.getElementById("altair-viz-b5c2c58ce0b1408eb84c84c9b79cdf52");
+=======
+    if (outputDiv.id !== "altair-viz-bfb8cbd73e6449bdaccbe2bd01cdb622") {
+      outputDiv = document.getElementById("altair-viz-bfb8cbd73e6449bdaccbe2bd01cdb622");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1951,6 +2415,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="x2-to-show-intervals" class="level2">
 <h2 class="anchored" data-anchor-id="x2-to-show-intervals"><code>X2()</code> to show intervals</h2>
+<<<<<<< HEAD
 <div id="017dc61c" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_bar().encode(</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'min(life_expect):Q'</span>),</span>
@@ -1965,22 +2430,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-9015c2f6c2554fa69cdec23403e1eeb3.vega-embed {
+=======
+<div id="c9b3b3ef" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_bar().encode(</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'min(life_expect):Q'</span>),</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    alt.X2(<span class="st">'max(life_expect):Q'</span>),</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'cluster:N'</span>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="21">
+
+<style>
+  #altair-viz-022ae6d0527a45ca851bbcb53bc86d62.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-9015c2f6c2554fa69cdec23403e1eeb3.vega-embed details,
   #altair-viz-9015c2f6c2554fa69cdec23403e1eeb3.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-9015c2f6c2554fa69cdec23403e1eeb3"></div>
+=======
+  #altair-viz-022ae6d0527a45ca851bbcb53bc86d62.vega-embed details,
+  #altair-viz-022ae6d0527a45ca851bbcb53bc86d62.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-022ae6d0527a45ca851bbcb53bc86d62"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-9015c2f6c2554fa69cdec23403e1eeb3") {
       outputDiv = document.getElementById("altair-viz-9015c2f6c2554fa69cdec23403e1eeb3");
+=======
+    if (outputDiv.id !== "altair-viz-022ae6d0527a45ca851bbcb53bc86d62") {
+      outputDiv = document.getElementById("altair-viz-022ae6d0527a45ca851bbcb53bc86d62");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2033,6 +2524,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_line" class="level2">
 <h2 class="anchored" data-anchor-id="mark_line"><code>mark_line()</code></h2>
+<<<<<<< HEAD
 <div id="de3a9f5e" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>data_4a <span class="op">=</span> data.loc[data[<span class="st">'cluster'</span>] <span class="op">==</span> <span class="dv">2</span>] <span class="co">#one cluster is more manageable</span></span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(data_4a).mark_line().encode(</span>
@@ -2050,22 +2542,51 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-85f7a2c737be41b7b9b2fdcc81e51c13.vega-embed {
+=======
+<div id="2dd5dcac" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>data_4a <span class="op">=</span> data.loc[data[<span class="st">'cluster'</span>] <span class="op">==</span> <span class="dv">2</span>] <span class="co">#one cluster is more manageable</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(data_4a).mark_line().encode(</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'country:N'</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">400</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+
+<style>
+  #altair-viz-e7c0b59ff69d4ef89565aeeb063871e6.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-85f7a2c737be41b7b9b2fdcc81e51c13.vega-embed details,
   #altair-viz-85f7a2c737be41b7b9b2fdcc81e51c13.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-85f7a2c737be41b7b9b2fdcc81e51c13"></div>
+=======
+  #altair-viz-e7c0b59ff69d4ef89565aeeb063871e6.vega-embed details,
+  #altair-viz-e7c0b59ff69d4ef89565aeeb063871e6.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-e7c0b59ff69d4ef89565aeeb063871e6"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-85f7a2c737be41b7b9b2fdcc81e51c13") {
       outputDiv = document.getElementById("altair-viz-85f7a2c737be41b7b9b2fdcc81e51c13");
+=======
+    if (outputDiv.id !== "altair-viz-e7c0b59ff69d4ef89565aeeb063871e6") {
+      outputDiv = document.getElementById("altair-viz-e7c0b59ff69d4ef89565aeeb063871e6");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2119,6 +2640,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 <section id="how-many-lines-tooltip-instead-of-legend" class="level2">
 <h2 class="anchored" data-anchor-id="how-many-lines-tooltip-instead-of-legend">how many lines? <code>Tooltip</code> instead of <code>legend</code></h2>
 <p>textbook advocates for having a plot with many more lines, no legend, and instead using <code>alt.Tooltip('country:N')</code>. This is technologically feasible but a bad idea. (Discuss: why?)</p>
+<<<<<<< HEAD
 <div id="c52a2ad7" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data).mark_line().encode(</span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
@@ -2136,22 +2658,51 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-da0b500d60ec4a39968a157c8a307b70.vega-embed {
+=======
+<div id="892a7be6" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data).mark_line().encode(</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'country:N'</span>, legend<span class="op">=</span><span class="va">None</span>),</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    alt.Tooltip(<span class="st">'country:N'</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">400</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+
+<style>
+  #altair-viz-31a29becbe6043b1b5051c0fa86869f4.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-da0b500d60ec4a39968a157c8a307b70.vega-embed details,
   #altair-viz-da0b500d60ec4a39968a157c8a307b70.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-da0b500d60ec4a39968a157c8a307b70"></div>
+=======
+  #altair-viz-31a29becbe6043b1b5051c0fa86869f4.vega-embed details,
+  #altair-viz-31a29becbe6043b1b5051c0fa86869f4.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-31a29becbe6043b1b5051c0fa86869f4"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-da0b500d60ec4a39968a157c8a307b70") {
       outputDiv = document.getElementById("altair-viz-da0b500d60ec4a39968a157c8a307b70");
+=======
+    if (outputDiv.id !== "altair-viz-31a29becbe6043b1b5051c0fa86869f4") {
+      outputDiv = document.getElementById("altair-viz-31a29becbe6043b1b5051c0fa86869f4");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2204,6 +2755,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_line-with-cosmetic-adjustments" class="level2">
 <h2 class="anchored" data-anchor-id="mark_line-with-cosmetic-adjustments"><code>mark_line()</code> with cosmetic adjustments</h2>
+<<<<<<< HEAD
 <div id="a767ca33" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data_4a).mark_line(</span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>    strokeWidth<span class="op">=</span><span class="dv">3</span>,</span>
@@ -2224,22 +2776,54 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-3e5ae5a9390e44ca8e19f48100ef4a28.vega-embed {
+=======
+<div id="43584f4f" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data_4a).mark_line(</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    strokeWidth<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    opacity<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    interpolate<span class="op">=</span><span class="st">'monotone'</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>).encode(</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'country:N'</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">400</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+
+<style>
+  #altair-viz-f673b4c56d844bd1bf8b6c2360bdcdbf.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-3e5ae5a9390e44ca8e19f48100ef4a28.vega-embed details,
   #altair-viz-3e5ae5a9390e44ca8e19f48100ef4a28.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-3e5ae5a9390e44ca8e19f48100ef4a28"></div>
+=======
+  #altair-viz-f673b4c56d844bd1bf8b6c2360bdcdbf.vega-embed details,
+  #altair-viz-f673b4c56d844bd1bf8b6c2360bdcdbf.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-f673b4c56d844bd1bf8b6c2360bdcdbf"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-3e5ae5a9390e44ca8e19f48100ef4a28") {
       outputDiv = document.getElementById("altair-viz-3e5ae5a9390e44ca8e19f48100ef4a28");
+=======
+    if (outputDiv.id !== "altair-viz-f673b4c56d844bd1bf8b6c2360bdcdbf") {
+      outputDiv = document.getElementById("altair-viz-f673b4c56d844bd1bf8b6c2360bdcdbf");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2292,6 +2876,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_line-with-cosmetic-adjustments-1" class="level2">
 <h2 class="anchored" data-anchor-id="mark_line-with-cosmetic-adjustments-1"><code>mark_line()</code> with cosmetic adjustments</h2>
+<<<<<<< HEAD
 <div id="0b5458fe" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>data_4a_2y <span class="op">=</span> data_4a[data_4a[<span class="st">'year'</span>].isin([<span class="dv">1955</span>, <span class="dv">2005</span>])]</span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(data_4a_2y).mark_line().encode(</span>
@@ -2309,22 +2894,51 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-18b419911ba443c492ca97ca4326e700.vega-embed {
+=======
+<div id="175b370d" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>data_4a_2y <span class="op">=</span> data_4a[data_4a[<span class="st">'year'</span>].isin([<span class="dv">1955</span>, <span class="dv">2005</span>])]</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(data_4a_2y).mark_line().encode(</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'country:N'</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">400</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
+
+<style>
+  #altair-viz-1fb51b70293a4451a03c0d84a7791a01.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-18b419911ba443c492ca97ca4326e700.vega-embed details,
   #altair-viz-18b419911ba443c492ca97ca4326e700.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-18b419911ba443c492ca97ca4326e700"></div>
+=======
+  #altair-viz-1fb51b70293a4451a03c0d84a7791a01.vega-embed details,
+  #altair-viz-1fb51b70293a4451a03c0d84a7791a01.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-1fb51b70293a4451a03c0d84a7791a01"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-18b419911ba443c492ca97ca4326e700") {
       outputDiv = document.getElementById("altair-viz-18b419911ba443c492ca97ca4326e700");
+=======
+    if (outputDiv.id !== "altair-viz-1fb51b70293a4451a03c0d84a7791a01") {
+      outputDiv = document.getElementById("altair-viz-1fb51b70293a4451a03c0d84a7791a01");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2377,6 +2991,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_area" class="level2">
 <h2 class="anchored" data-anchor-id="mark_area"><code>mark_area()</code></h2>
+<<<<<<< HEAD
 <div id="deced7a1" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>dataUS <span class="op">=</span> data.loc[data[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">'United States'</span>]</span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -2392,22 +3007,49 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-523271eaa43e4b60a943d255fef80797.vega-embed {
+=======
+<div id="b5d3a7c4" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>dataUS <span class="op">=</span> data.loc[data[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">'United States'</span>]</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataUS).mark_area().encode(</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'fertility:Q'</span>)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+
+<style>
+  #altair-viz-156335839f1545a5b46b6208ac6f20f3.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-523271eaa43e4b60a943d255fef80797.vega-embed details,
   #altair-viz-523271eaa43e4b60a943d255fef80797.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-523271eaa43e4b60a943d255fef80797"></div>
+=======
+  #altair-viz-156335839f1545a5b46b6208ac6f20f3.vega-embed details,
+  #altair-viz-156335839f1545a5b46b6208ac6f20f3.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-156335839f1545a5b46b6208ac6f20f3"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-523271eaa43e4b60a943d255fef80797") {
       outputDiv = document.getElementById("altair-viz-523271eaa43e4b60a943d255fef80797");
+=======
+    if (outputDiv.id !== "altair-viz-156335839f1545a5b46b6208ac6f20f3") {
+      outputDiv = document.getElementById("altair-viz-156335839f1545a5b46b6208ac6f20f3");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2460,6 +3102,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_area-with-interpolatemonotone" class="level2">
 <h2 class="anchored" data-anchor-id="mark_area-with-interpolatemonotone"><code>mark_area()</code> with <code>interpolate='monotone'</code></h2>
+<<<<<<< HEAD
 <div id="2e4efc43" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataUS).mark_area(interpolate<span class="op">=</span><span class="st">'monotone'</span>).encode(</span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
@@ -2473,22 +3116,47 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-0ac842afb5c8410d97761eb963e8b347.vega-embed {
+=======
+<div id="1a28f0a0" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataUS).mark_area(interpolate<span class="op">=</span><span class="st">'monotone'</span>).encode(</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'fertility:Q'</span>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="27">
+
+<style>
+  #altair-viz-12489a62de914e71bca0ef54b00d6ad1.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-0ac842afb5c8410d97761eb963e8b347.vega-embed details,
   #altair-viz-0ac842afb5c8410d97761eb963e8b347.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-0ac842afb5c8410d97761eb963e8b347"></div>
+=======
+  #altair-viz-12489a62de914e71bca0ef54b00d6ad1.vega-embed details,
+  #altair-viz-12489a62de914e71bca0ef54b00d6ad1.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-12489a62de914e71bca0ef54b00d6ad1"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-0ac842afb5c8410d97761eb963e8b347") {
       outputDiv = document.getElementById("altair-viz-0ac842afb5c8410d97761eb963e8b347");
+=======
+    if (outputDiv.id !== "altair-viz-12489a62de914e71bca0ef54b00d6ad1") {
+      outputDiv = document.getElementById("altair-viz-12489a62de914e71bca0ef54b00d6ad1");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2541,6 +3209,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_area-with-stacking" class="level2">
 <h2 class="anchored" data-anchor-id="mark_area-with-stacking"><code>mark_area()</code> with stacking</h2>
+<<<<<<< HEAD
 <div id="c1a1f132" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>dataNA <span class="op">=</span> data[data[<span class="st">'country'</span>].isin([<span class="st">'United States'</span>, <span class="st">'Mexico'</span>, <span class="st">'Canada'</span>])]</span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area().encode(</span>
@@ -2556,22 +3225,49 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-7c70cb69e7544b4f9970387e17237d25.vega-embed {
+=======
+<div id="99dec079" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>dataNA <span class="op">=</span> data[data[<span class="st">'country'</span>].isin([<span class="st">'United States'</span>, <span class="st">'Mexico'</span>, <span class="st">'Canada'</span>])]</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area().encode(</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'pop:Q'</span>),</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'country:N'</span>)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+
+<style>
+  #altair-viz-328e2caeccb44d2ca5e78d44f8edf184.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-7c70cb69e7544b4f9970387e17237d25.vega-embed details,
   #altair-viz-7c70cb69e7544b4f9970387e17237d25.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-7c70cb69e7544b4f9970387e17237d25"></div>
+=======
+  #altair-viz-328e2caeccb44d2ca5e78d44f8edf184.vega-embed details,
+  #altair-viz-328e2caeccb44d2ca5e78d44f8edf184.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-328e2caeccb44d2ca5e78d44f8edf184"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-7c70cb69e7544b4f9970387e17237d25") {
       outputDiv = document.getElementById("altair-viz-7c70cb69e7544b4f9970387e17237d25");
+=======
+    if (outputDiv.id !== "altair-viz-328e2caeccb44d2ca5e78d44f8edf184") {
+      outputDiv = document.getElementById("altair-viz-328e2caeccb44d2ca5e78d44f8edf184");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2624,6 +3320,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_area-with-no-stacking-and-opacity" class="level2">
 <h2 class="anchored" data-anchor-id="mark_area-with-no-stacking-and-opacity"><code>mark_area()</code> with no stacking and opacity</h2>
+<<<<<<< HEAD
 <div id="63a5d4b9" class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area(opacity<span class="op">=</span><span class="fl">0.5</span>).encode(</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
@@ -2638,22 +3335,48 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-3a58f631c08f4922bf00314b1b4209b6.vega-embed {
+=======
+<div id="009b9967" class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area(opacity<span class="op">=</span><span class="fl">0.5</span>).encode(</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'pop:Q'</span>, stack<span class="op">=</span><span class="va">None</span>),</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'country:N'</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="29">
+
+<style>
+  #altair-viz-2b38d8cba0b74418b4ecdb420a6a8463.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-3a58f631c08f4922bf00314b1b4209b6.vega-embed details,
   #altair-viz-3a58f631c08f4922bf00314b1b4209b6.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-3a58f631c08f4922bf00314b1b4209b6"></div>
+=======
+  #altair-viz-2b38d8cba0b74418b4ecdb420a6a8463.vega-embed details,
+  #altair-viz-2b38d8cba0b74418b4ecdb420a6a8463.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-2b38d8cba0b74418b4ecdb420a6a8463"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-3a58f631c08f4922bf00314b1b4209b6") {
       outputDiv = document.getElementById("altair-viz-3a58f631c08f4922bf00314b1b4209b6");
+=======
+    if (outputDiv.id !== "altair-viz-2b38d8cba0b74418b4ecdb420a6a8463") {
+      outputDiv = document.getElementById("altair-viz-2b38d8cba0b74418b4ecdb420a6a8463");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2706,6 +3429,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="mark_area-to-show-range" class="level2">
 <h2 class="anchored" data-anchor-id="mark_area-to-show-range"><code>mark_area()</code> to show range</h2>
+<<<<<<< HEAD
 <div id="a3e0913a" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area().encode(</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
@@ -2722,22 +3446,50 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-9e273256b96341468d92ef1a84c0d78b.vega-embed {
+=======
+<div id="522152ae" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area().encode(</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'year:O'</span>),</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'min(fertility):Q'</span>),</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>    alt.Y2(<span class="st">'max(fertility):Q'</span>)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span>{<span class="st">"step"</span>: <span class="dv">40</span>}</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+
+<style>
+  #altair-viz-91be5013eb6041b9a2714e82fb142fd0.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-9e273256b96341468d92ef1a84c0d78b.vega-embed details,
   #altair-viz-9e273256b96341468d92ef1a84c0d78b.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-9e273256b96341468d92ef1a84c0d78b"></div>
+=======
+  #altair-viz-91be5013eb6041b9a2714e82fb142fd0.vega-embed details,
+  #altair-viz-91be5013eb6041b9a2714e82fb142fd0.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-91be5013eb6041b9a2714e82fb142fd0"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-9e273256b96341468d92ef1a84c0d78b") {
       outputDiv = document.getElementById("altair-viz-9e273256b96341468d92ef1a84c0d78b");
+=======
+    if (outputDiv.id !== "altair-viz-91be5013eb6041b9a2714e82fb142fd0") {
+      outputDiv = document.getElementById("altair-viz-91be5013eb6041b9a2714e82fb142fd0");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2791,6 +3543,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="syntax-mark_area-swap-axes" class="level2">
 <h2 class="anchored" data-anchor-id="syntax-mark_area-swap-axes">Syntax: <code>mark_area()</code> swap axes</h2>
+<<<<<<< HEAD
 <div id="a85d1562" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area().encode(</span>
 <span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'year:O'</span>),</span>
@@ -2807,22 +3560,50 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-5651b38e0d4f47cebb9020bc42abbd90.vega-embed {
+=======
+<div id="a809175b" class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(dataNA).mark_area().encode(</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'year:O'</span>),</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'min(fertility):Q'</span>),</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    alt.X2(<span class="st">'max(fertility):Q'</span>)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span>{<span class="st">"step"</span>: <span class="dv">40</span>}</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="31">
+
+<style>
+  #altair-viz-79908562e27645e6b57dc36f51924351.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-5651b38e0d4f47cebb9020bc42abbd90.vega-embed details,
   #altair-viz-5651b38e0d4f47cebb9020bc42abbd90.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-5651b38e0d4f47cebb9020bc42abbd90"></div>
+=======
+  #altair-viz-79908562e27645e6b57dc36f51924351.vega-embed details,
+  #altair-viz-79908562e27645e6b57dc36f51924351.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-79908562e27645e6b57dc36f51924351"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-5651b38e0d4f47cebb9020bc42abbd90") {
       outputDiv = document.getElementById("altair-viz-5651b38e0d4f47cebb9020bc42abbd90");
+=======
+    if (outputDiv.id !== "altair-viz-79908562e27645e6b57dc36f51924351") {
+      outputDiv = document.getElementById("altair-viz-79908562e27645e6b57dc36f51924351");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2912,6 +3693,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 <li><code>tooltip</code>: Tooltip text to display upon mouse hover over the mark.</li>
 <li><code>order</code>: Mark ordering, determines line/area point order and drawing order.</li>
 </ul>
+<<<<<<< HEAD
 <div id="c1d3efb3" class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
 <span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -2929,22 +3711,51 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-aa7b753f8b9e4cb6806ed0c733098f9f.vega-embed {
+=======
+<div id="dd5bc03b" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>])),</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'cluster:N'</span>),</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    alt.OpacityValue(<span class="fl">0.5</span>),</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    alt.Tooltip(<span class="st">'country:N'</span>)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="32">
+
+<style>
+  #altair-viz-aff8d371d9594d15a91d5a64e0d7c4b7.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-aa7b753f8b9e4cb6806ed0c733098f9f.vega-embed details,
   #altair-viz-aa7b753f8b9e4cb6806ed0c733098f9f.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-aa7b753f8b9e4cb6806ed0c733098f9f"></div>
+=======
+  #altair-viz-aff8d371d9594d15a91d5a64e0d7c4b7.vega-embed details,
+  #altair-viz-aff8d371d9594d15a91d5a64e0d7c4b7.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-aff8d371d9594d15a91d5a64e0d7c4b7"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-aa7b753f8b9e4cb6806ed0c733098f9f") {
       outputDiv = document.getElementById("altair-viz-aa7b753f8b9e4cb6806ed0c733098f9f");
+=======
+    if (outputDiv.id !== "altair-viz-aff8d371d9594d15a91d5a64e0d7c4b7") {
+      outputDiv = document.getElementById("altair-viz-aff8d371d9594d15a91d5a64e0d7c4b7");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -2998,6 +3809,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="tooltip-ii" class="level2">
 <h2 class="anchored" data-anchor-id="tooltip-ii"><code>tooltip</code> II</h2>
+<<<<<<< HEAD
 <div id="f97310da" class="cell" data-execution_count="35">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
 <span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -3016,22 +3828,52 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-86eaadeeada34c83a6a93acec0527e02.vega-embed {
+=======
+<div id="a53153ad" class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>])),</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'cluster:N'</span>),</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>    alt.OpacityValue(<span class="fl">0.5</span>),</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>    alt.Tooltip(<span class="st">'country:N'</span>),</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>    alt.Order(<span class="st">'pop:Q'</span>, sort<span class="op">=</span><span class="st">'descending'</span>)</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="33">
+
+<style>
+  #altair-viz-710dd2cdab374433ada760353f12b58d.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-86eaadeeada34c83a6a93acec0527e02.vega-embed details,
   #altair-viz-86eaadeeada34c83a6a93acec0527e02.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-86eaadeeada34c83a6a93acec0527e02"></div>
+=======
+  #altair-viz-710dd2cdab374433ada760353f12b58d.vega-embed details,
+  #altair-viz-710dd2cdab374433ada760353f12b58d.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-710dd2cdab374433ada760353f12b58d"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-86eaadeeada34c83a6a93acec0527e02") {
       outputDiv = document.getElementById("altair-viz-86eaadeeada34c83a6a93acec0527e02");
+=======
+    if (outputDiv.id !== "altair-viz-710dd2cdab374433ada760353f12b58d") {
+      outputDiv = document.getElementById("altair-viz-710dd2cdab374433ada760353f12b58d");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -3084,6 +3926,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 </section>
 <section id="tooltip-iii" class="level2">
 <h2 class="anchored" data-anchor-id="tooltip-iii"><code>tooltip</code> III</h2>
+<<<<<<< HEAD
 <div id="3d810b01" class="cell" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>final_chart <span class="op">=</span> alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
 <span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
@@ -3107,22 +3950,57 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 
 <style>
   #altair-viz-a97bb45147d1466a885d8f232bb6cd5d.vega-embed {
+=======
+<div id="8a87f6e0" class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>final_chart <span class="op">=</span> alt.Chart(data2000).mark_point(filled<span class="op">=</span><span class="va">True</span>).encode(</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'life_expect:Q'</span>),</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    alt.Size(<span class="st">'pop:Q'</span>, scale<span class="op">=</span>alt.Scale(<span class="bu">range</span><span class="op">=</span>[<span class="dv">0</span>,<span class="dv">1000</span>])),</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    alt.Color(<span class="st">'cluster:N'</span>),</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    alt.OpacityValue(<span class="fl">0.5</span>),</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    alt.Order(<span class="st">'pop:Q'</span>, sort<span class="op">=</span><span class="st">'descending'</span>),</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>    tooltip <span class="op">=</span> [</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>        alt.Tooltip(<span class="st">'country:N'</span>),</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>        alt.Tooltip(<span class="st">'fertility:Q'</span>),</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>        alt.Tooltip(<span class="st">'life_expect:Q'</span>)</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>    ]   </span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>final_chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="34">
+
+<style>
+  #altair-viz-004e027ccc054afaaf4ac6483bbc4f95.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-a97bb45147d1466a885d8f232bb6cd5d.vega-embed details,
   #altair-viz-a97bb45147d1466a885d8f232bb6cd5d.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-a97bb45147d1466a885d8f232bb6cd5d"></div>
+=======
+  #altair-viz-004e027ccc054afaaf4ac6483bbc4f95.vega-embed details,
+  #altair-viz-004e027ccc054afaaf4ac6483bbc4f95.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-004e027ccc054afaaf4ac6483bbc4f95"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-a97bb45147d1466a885d8f232bb6cd5d") {
       outputDiv = document.getElementById("altair-viz-a97bb45147d1466a885d8f232bb6cd5d");
+=======
+    if (outputDiv.id !== "altair-viz-004e027ccc054afaaf4ac6483bbc4f95") {
+      outputDiv = document.getElementById("altair-viz-004e027ccc054afaaf4ac6483bbc4f95");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -3177,6 +4055,7 @@ to work. instead, I saved the data to local and I read it in from local. The cod
 <section id="production-quality-interactive-plot" class="level2">
 <h2 class="anchored" data-anchor-id="production-quality-interactive-plot">Production-quality interactive plot</h2>
 <p>(no need to understand all the details)</p>
+<<<<<<< HEAD
 <div id="12afa051" class="cell" data-execution_count="37">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>cars <span class="op">=</span> vega_data.cars() </span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -3222,22 +4101,77 @@ C:\Users\hkura\anaconda3\envs\spyder-env\Lib\site-packages\altair\utils\core.py:
 
 <style>
   #altair-viz-81ec84557f014e528e0c99669adc38f4.vega-embed {
+=======
+<div id="04e4df0c" class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>cars <span class="op">=</span> vega_data.cars() </span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="co"># create an interval selection over an x-axis encoding</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>brush <span class="op">=</span> alt.selection_interval(encodings<span class="op">=</span>[<span class="st">'x'</span>])</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="co"># determine opacity based on brush</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>opacity <span class="op">=</span> alt.condition(brush, alt.value(<span class="fl">0.9</span>), alt.value(<span class="fl">0.1</span>))</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="co"># an overview histogram of cars per year</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="co"># add the interval brush to select cars over time</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>overview <span class="op">=</span> alt.Chart(cars).mark_bar().encode(</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'Year:O'</span>, timeUnit<span class="op">=</span><span class="st">'year'</span>, <span class="co"># extract year unit, treat as ordinal</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>      axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="va">None</span>, labelAngle<span class="op">=</span><span class="dv">0</span>) <span class="co"># no title, no label angle</span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'count()'</span>, title<span class="op">=</span><span class="va">None</span>), <span class="co"># counts, no axis title</span></span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>    opacity<span class="op">=</span>opacity</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>).add_params(</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>    brush      <span class="co"># add interval brush selection to the chart</span></span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">400</span>, <span class="co"># set the chart width to 400 pixels</span></span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">50</span>  <span class="co"># set the chart height to 50 pixels</span></span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a><span class="co"># a detail scatterplot of horsepower vs. mileage</span></span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a><span class="co"># modulate point opacity based on the brush selection</span></span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>detail <span class="op">=</span> alt.Chart(cars).mark_point().encode(</span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'Horsepower'</span>),</span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'Miles_per_Gallon'</span>),</span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># set opacity based on brush selection</span></span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>    opacity<span class="op">=</span>opacity</span>
+<span id="cb37-31"><a href="#cb37-31" aria-hidden="true" tabindex="-1"></a>).properties(width<span class="op">=</span><span class="dv">400</span>) <span class="co"># set chart width to match the first chart</span></span>
+<span id="cb37-32"><a href="#cb37-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-33"><a href="#cb37-33" aria-hidden="true" tabindex="-1"></a><span class="co"># vertically concatenate (vconcat) charts using the '&amp;' operator</span></span>
+<span id="cb37-34"><a href="#cb37-34" aria-hidden="true" tabindex="-1"></a>overview <span class="op">&amp;</span> detail</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="35">
+
+<style>
+  #altair-viz-2159777e23c54699a32446488138d0f5.vega-embed {
+>>>>>>> upstream/main
     width: 100%;
     display: flex;
   }
 
+<<<<<<< HEAD
   #altair-viz-81ec84557f014e528e0c99669adc38f4.vega-embed details,
   #altair-viz-81ec84557f014e528e0c99669adc38f4.vega-embed details summary {
     position: relative;
   }
 </style>
 <div id="altair-viz-81ec84557f014e528e0c99669adc38f4"></div>
+=======
+  #altair-viz-2159777e23c54699a32446488138d0f5.vega-embed details,
+  #altair-viz-2159777e23c54699a32446488138d0f5.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-2159777e23c54699a32446488138d0f5"></div>
+>>>>>>> upstream/main
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
+<<<<<<< HEAD
     if (outputDiv.id !== "altair-viz-81ec84557f014e528e0c99669adc38f4") {
       outputDiv = document.getElementById("altair-viz-81ec84557f014e528e0c99669adc38f4");
+=======
+    if (outputDiv.id !== "altair-viz-2159777e23c54699a32446488138d0f5") {
+      outputDiv = document.getElementById("altair-viz-2159777e23c54699a32446488138d0f5");
+>>>>>>> upstream/main
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -3290,6 +4224,7 @@ C:\Users\hkura\anaconda3\envs\spyder-env\Lib\site-packages\altair\utils\core.py:
 </section>
 <section id="publishing" class="level2">
 <h2 class="anchored" data-anchor-id="publishing">Publishing</h2>
+<<<<<<< HEAD
 <div id="daf91505" class="cell" data-execution_count="38">
 <div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>final_chart</span>
 <span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>final_chart.save(<span class="st">'output/chart.html'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3300,6 +4235,14 @@ C:\Users\hkura\anaconda3\envs\spyder-env\Lib\site-packages\altair\utils\core.py:
 </div>
 <div id="aa5303d7" class="cell" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>final_chart.save(<span class="st">'output/chart.png'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+=======
+<div id="f0cf5702" class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>final_chart</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>final_chart.save(<span class="st">'output/chart.html'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="8c6b4cfc" class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>final_chart.save(<span class="st">'output/chart.png'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+>>>>>>> upstream/main
 </div>
 <p>Remark: <code>chart.save()</code> is important for anything where you want your output to be reproducible in the future.</p>
 <p>Discussion q – What is difference between “View Source” and “View Compiled Vega”?</p>
