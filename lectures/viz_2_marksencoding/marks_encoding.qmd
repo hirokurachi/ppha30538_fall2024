@@ -73,6 +73,7 @@ Pandas data frames come with types. When loading data not from pandas, explicitl
 - `'Q'` indicates a *quantitative* type (numerical data with meaningful magnitudes), and
 - `'T'` indicates a *temporal* type (date/time data)
 
+Memo: Vega knows 4 types of data
 
 ## Nominal (N)
 
@@ -108,9 +109,14 @@ Pandas data frames come with types. When loading data not from pandas, explicitl
     * With *ratio* data can also ask:
         * *how many are there of value A?* 
         * *value A is what proportion of value B? (A / B)*,
+
+
+    Memo: There's no meaning of discussing "=0" for Ordinal? (though we can calc)
+
 * Textbook: "An axis with a zero baseline is essential for proportional comparisons of ratio values, but can be safely omitted for interval comparisons."
 * Discussion question -- Why is it so important to include zeros for ratio data? Can you give a counter-example where omitting zeros on the plot would lead the reader to misleading conclusions? 
 
+    Memo: See the after_lecture file! The graph deceives us as if the changing rate is quite steeper than how it looks like in real.  
 
 ## Temporal (T)
 
