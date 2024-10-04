@@ -89,6 +89,8 @@ pip install altair
 pip install vega_datasets
 ```
 
+<!-- PG to SSS/GGG a huge number of students thought that this was a command that they run in th python interpreter rather than a command that they run at the terminal. need more detail/explanation.-->
+
 
 ## My first plot -- image 
 ```{python}
@@ -103,6 +105,8 @@ alt.Chart(df).mark_bar().encode(
 ```
 
 [source](https://vega.github.io/vega-lite/#example).
+
+
 
 ## My first plot -- grammar
 ```{json}
@@ -119,6 +123,7 @@ alt.Chart(df).mark_bar().encode(
 * This is designed to be readable for both a human and for Vega. Pretty cool!
 
 Discussion question: what does each line of text mean?
+
 
 ## Why the emphasis on grammar?
 * Packages for doing graphics and coding languages change over time
@@ -320,14 +325,6 @@ Make a bar plot showing the **lowest** rainfall for each city in the dataset.
 Hint: Altair's aggregation methods are [here](https://altair-viz.github.io/user_guide/encodings/index.html#aggregation-functions)
 
 
-My code:
-```{python}
-alt.Chart(df).mark_bar().encode(
-  alt.X("min(precip)", axis = alt.Axis(title = "Minimum Rain")),
-  alt.Y("city", axis = alt.Axis(title = "City"))
-)
-```
-
 # Multiple Views 
 
 ## Multiple Views: roadmap
@@ -363,7 +360,6 @@ line + point
 
 
 ## Multiple Marks -- the short way
-Better and eroquent way!
 
 ```{python}
 mpg = alt.Chart(cars).mark_line().encode(
@@ -447,7 +443,6 @@ https://vega.github.io/schema/vega-lite/v5.json
       "type": "string"
 ```
 
-Memo: You can choose 20 kinds of "Mark"s: A grammatical rule!
 
 ## example 1: snippet from Altair
 
@@ -458,9 +453,6 @@ x = alt.X('average(precipitation):Q')
 print(x.to_json())                  
 ```
 
-Memo: Code writen in Python - Altair -> JSON - Vega -> Visual
-
-Memo: Can see the JSON script by the method .to_json()
 
 ## example 2: longer snippet from Altair
 ```{python}
@@ -488,7 +480,6 @@ chart = json.loads(chart_as_string)
 chart.keys()
 ```
 
-Memo: Can load as a JSON script by json.loads() -> Then can order despcriptively (to extract relevant subsets, e.g.)
 
 ## extract dataset
 
