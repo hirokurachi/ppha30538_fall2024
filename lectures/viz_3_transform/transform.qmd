@@ -47,6 +47,7 @@ format:
 ```{python}
 import pandas as pd
 import altair as alt
+alt.renderers.enable('default')
 ```
 
 
@@ -171,6 +172,8 @@ alt.Chart(movies_url).mark_bar().encode(
 )
 ```
 
+Memo: q1 = 25th percentile, q3 = 75th percentile
+Memo: Be careful that a row represents not a individual movie, but an aggregated set of movies in a genre. Thus the implication is such as that some Dramas are as nice as some Documentaries, but some are not.
 
 ## Case study: when are the highest grossing films?
 
@@ -193,6 +196,7 @@ alt.Chart(movies_url).mark_point().encode(
 )
 ```
 
+Memo: a bug; there are values for future release date!
 
 ## do-pair-share 
 
@@ -206,6 +210,14 @@ Hint: if you aren't sure how to aggregate the x-variable, go back to the first v
 
 3. *Share* -- discuss results as a class
 
+```{python}
+alt.Chart(movies_url).mark_area().encode(
+    alt.X('month(Release_Date):T'),
+    alt.Y('average(US_Gross):Q')
+)
+
+# average, max, median
+```
 
 ## Aggregation: summary
 
@@ -382,6 +394,8 @@ alt.Chart(movies_url).mark_bar().transform_filter(
     ))
 )
 ```
+
+Memo: Simplicity v. Understandability on what's going on.
 
 ## `window`: in-class exercise
 
