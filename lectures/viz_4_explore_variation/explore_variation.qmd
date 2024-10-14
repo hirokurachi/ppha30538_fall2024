@@ -132,7 +132,7 @@ movies = pd.read_json(movies_url)
 
 ```{python}
 #| echo: false
-movies = pd.read_json('data/movies.json')
+# movies = pd.read_json('data/movies.json')
 ```
 
 
@@ -152,7 +152,9 @@ alt.Chart(movies_url).mark_circle().encode(
     alt.X('Rotten_Tomatoes_Rating:Q', bin=alt.BinParams(maxbins=20)),
     alt.Y('count(IMDB_Rating):Q')
 )
+# count() can be used as a short-hand version of transform_aggregate
 ```
+
 ## scatter plot -- syntax trick
 Replace `count(IMDB_Rating)` with `count()` because we aren't using IMDB rating any more.
 ```{python}
