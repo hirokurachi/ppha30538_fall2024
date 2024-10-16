@@ -202,6 +202,7 @@ xy_color = alt.Chart(movies_url).mark_bar().encode(
 xy_color
 ```
 
+MEMO: For continuous variables, we always use bin, and use the same way as categorical ones
 
 ## Discussion question
 ```{python}
