@@ -236,6 +236,30 @@ Explicitly specify the data type so that Altair/Vega know how to interpret it. I
 ![Visual encoding](pictures/visual_encoding.jpg){height="85%"}
 
 Source:  Jacques Bertin in Semiology of Graphics (1967), via [source](https://medium.com/@mbostock/introducing-d3-scale-61980c51545f)
+<<<<<<< HEAD
+
+
+::: {.notes .content-visible when-profile="speaker"}
+**Quote from textbook:**
+
+> Within the plane a mark can be at the top or the bottom, to the right or the left. The eye perceives two independent dimensions along X and Y, which are distinguished orthogonally. A variation in light energy produces a third dimension in Z, which is independent of X and Y…
+
+> The eye is sensitive, along the Z dimension, to 6 independent visual variables, which can be superimposed on the planar figures: 
+
+> * the size of the marks
+* their value [brightness]
+* texture
+* color [hue]
+* orientation
+* shape. 
+
+> They can represent differences (≠), similarities (≡), a quantified order (Q), or a nonquantified order (O), and can express groups, hierarchies, or vertical movements.
+
+**speaker notes**
+
+*talk through a few aspects of this image. The examples are a bit gratuitous. Most of the information content is in the boxes in the first two columns
+=======
+>>>>>>> b31a24ff9f98269de88e95d5e08d1ef28309b049
 
 
 
@@ -316,6 +340,24 @@ alt.Chart(data2000).mark_point().encode(
 )
 ```
 
+<<<<<<< HEAD
+
+::: {.notes .content-visible when-profile="speaker"}
+**NOTES:**
+
+FYI this "Y" plot is pretty confusing as a standalone plot. It is needed because it is a setup for subsequent plots. You can say that
+
+In-class exercise: what happens if you swap the Q and the O types? (skipped this for time reasons)
+
+solution: 
+
+* treating fertility as a categorical variable means you get a separate
+category on the x-axis for every single value of fertility
+* treating cluster as a quantitative variable means you get extra grid marks
+:::
+
+=======
+>>>>>>> b31a24ff9f98269de88e95d5e08d1ef28309b049
 
 
 ## Do not require zero on axis range 
@@ -613,6 +655,11 @@ alt.Chart(dataNA).mark_area(opacity=0.5).encode(
     alt.Color('country:N')
 )
 ```
+
+::: {.notes .content-visible when-profile="speaker"}
+**NOTES:**
+This plot is not effective! Don't make a plot like this. Hard to see where "Canada" is because it is blue in the legend but is orange on the plot.
+:::
 
 
 ## `mark_area()` to show range
